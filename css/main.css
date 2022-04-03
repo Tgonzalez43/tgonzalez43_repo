@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.body {
+  background-image: linear-gradient(to left,#aaa,#bbb);
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:

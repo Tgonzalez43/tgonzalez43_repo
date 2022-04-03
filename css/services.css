@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+  grid-template-rows: 100px 1fr 1fr auto;
+  grid-template-columns: auto;
+  grid-gap: 5px;
+}
+
+.border {
+  background-color: #ddd;
+  border-radius: 20px;
+}
+header {
+  grid-area: header;
+  letter-spacing: 4px;
+  margin: 1px;
+  padding: 1px;
+  font-weight: lighter;
+  font-size: 25px;
+  font-style: oblique;
+  font-family: arial;
+  text-align: center;
+  text-decoration: overline;
+}
+
+.negro-celeste {
+  border-width: medium;
+  border: ridge;
+  border-color: black;
+  border-radius: 10px;
+  border-left: 10px;
+  border-top: 10px;
+  border-bottom: 10px;
+  border-right: 20px;
+  color: #ffffff;
+  background-color: red;
+  opacity: 80%;
+}
+
+section#productos {
+  grid-area: productos;
+}
+#productos {
+  background-image: url(https://peritojudicial.com/content/images/2021/02/Ingenieria-Mecanica.jpg);
+  background-size: 500px;
+}
+#productos p {
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+section#servicios {
+  grid-area: servicios;
+}
+#servicios {
+  background-image: url(https://www.reynasa.es/wp-content/uploads/2019/05/mecanica-1024x647.jpg);
+  background-size: 500px;
+}
+#servicios p {
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.lista_nav {
+  width: 200px;
+  transform: translate(-5%, -5%);
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: fantasy;
+  background: white;
+  border: ridge;
+  border-color: red;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.lista_nav:hover {
+  background-color: red;
+  opacity: 80%;
+}
+
+aside {
+  grid-area: publicidad;
+  border: solid 5px black;
+}
+aside h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+}
+.footer-container {font-style: arial;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+h4 { font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 18px;}
+
+.email { 
+  transform: translate(50%, 50%);
+  font-size: 18px;
+color: royalblue;
+font-style: oblique;
+font-family: Arial, Helvetica, sans-serif;
+background-image: url(https://static.educalingo.com/img/en/800/wrench.jpg);
+background-size: 150px;
+border: solid;
+border-radius: 10px;
+opacity: 80%;}
+
+.email:hover {
+  background-color: white;
+  opacity: 50%;
+}
+.enlaceinstagram {
+  transform: translate (50%, 50%);
+  background: salmon;
+  border: solid;
+  border-radius: 10px;}
+
+.enlaceinstagram:hover {
+  background-color: white;
+  opacity: 50%;
+}
+.enlacefacebook { 
+  transform: translate (50%, 50%);
+  background: blue;
+  border: solid;
+  border-radius: 10px;}
+
+.enlacefacebook:hover {
+  background-color: white;
+  opacity: 50%;
+}
+
+.enlaceiragoogle {
+  transform: translate (50%, 50%);
+  background: yellow;
+  border: solid;
+  border-radius: 10px;}
+
+.enlaceiragoogle:hover {
+  background-color: white;
+  opacity: 50%;
+}
+
+@media screen and (min-width: 320px) {
+	#grilla {
+    	border: 4px solid black;
+    	background-color: lightblue;
+     }
+}
+@media screen and (min-width: 480px) {
+	#grilla { grid-template-columns: repeat(3 1fr);
+    	border: 1px solid black;
+    	background-color: yellow;
+     }
+}
+@media screen and (min-width: 600px) {
+	#grilla { grid-template-columns: repeat(3 1fr);
+     }
+}
+@media screen and (min-width: 768px) {
+	#grilla {
+    	border: 4px solid black;
+    	background-color: red;
+     }
+}
+@media screen and (min-width: 1200px) {
+	#grilla {
+    	border: 4px solid black;
+    	background-color: #aaa
+     }
+}
